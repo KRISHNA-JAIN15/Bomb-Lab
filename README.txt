@@ -42,6 +42,7 @@ The objective is to solve all phases to defuse the bomb. Incorrect answers or in
 @@Instructions to Install all dependencies@@
 
 sudo apt update
+sudo apt upgrade
 sudo apt install -y build-essential gdb manpages-dev
 sudo apt install python3 gcc nasm gdb
 sudo apt install figlet toilet
@@ -53,7 +54,7 @@ python3 -m pip install pillow
 gcc --version
 gdb --version
 nasm --version
-
+ldd --version
 
 ////////////Morse code////////////////////////
 
