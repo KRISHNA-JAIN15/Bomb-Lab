@@ -35,6 +35,11 @@ The objective is to solve all phases to defuse the bomb. Incorrect answers or in
 - Reveal the Secret Key
 
 @@@@@@@@@@@@@@
+#### To Clone the Directory 
+        git clone https://github.com/KRISHNA-JAIN15/Bomb-Lab.git
+@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@
 #### Run the round using ./bomb_lab 
 @@@@@@@@@@@@@@
 ///////////////////////////////////////////
