@@ -1,4 +1,4 @@
-####Bomb Defusal Game####
+# Bomb Defusal Game
 
 Description
 This is a Python-based Bomb Defusal Game that consists of multiple phases. 
@@ -34,58 +34,90 @@ The objective is to solve all phases to defuse the bomb. Incorrect answers or in
 - Find Hidden Messages.
 - Reveal the Secret Key
 
-@@@@@@@@@@@@@@
 #### To Clone the Directory 
         git clone https://github.com/KRISHNA-JAIN15/Bomb-Lab.git
-@@@@@@@@@@@@@@
 
-@@@@@@@@@@@@@@
 #### Run the round using ./bomb_lab 
-@@@@@@@@@@@@@@
-///////////////////////////////////////////
 
-@@Instructions to Install all dependencies@@
 
-sudo apt update
-sudo apt upgrade
-sudo apt install git
-sudo apt install -y build-essential gdb manpages-dev
-sudo apt install python3 gcc nasm gdb
-sudo apt install figlet toilet
-sudo apt install ruby
-sudo gem install lolcat
-sudo apt install alsa-utils
-python3 -m pip install pillow
+### Instructions to Install all dependencies
 
-gcc --version
-gdb --version
-nasm --version
-ldd --version
+- sudo apt update
+- sudo apt upgrade
+- sudo apt install git
+- sudo apt install -y build-essential gdb manpages-dev
+- sudo apt install python3 gcc nasm gdb
+- sudo apt install figlet toilet
+- sudo apt install ruby
+- sudo gem install lolcat
+- sudo apt install alsa-utils
+- python3 -m pip install pillow
 
-////////////Morse code////////////////////////
 
-'a': '#@', 'b': '@###', 'c': '@#@#', 'd': '@##', 'e': '#',
-'f': '##@#', 'g': '@@#', 'h': '####', 'i': '##', 'j': '#@@@',
-'k': '@#@', 'l': '#@##', 'm': '@@', 'n': '@#', 'o': '@@@',
-'p': '#@@#', 'q': '@@#@', 'r': '#@#', 's': '###', 't': '@',
-'u': '##@', 'v': '###@', 'w': '#@@', 'x': '@##@', 'y': '@#@@',
-'z': '@@##', '0': '@@@@@', '1': '#@@@@', '2': '##@@@',
-'3': '###@@', '4': '####@', '5': '#####', '6': '@####',
-'7': '@@###', '8': '@@@##', '9': '@@@@#'
+### Check Version
+- gcc --version
+- gdb --version
+- nasm --version
+- ldd --version
 
-////////////Find Key///////////////////////////
+## Custom Morse Code Dictionary
 
-Display the contents of a file
-    cat filename.txt
+Here’s a unique representation of Morse code using `#`and `@` symbols:
 
-Change to a specific directory
-    cd /path/to/directory
+- **A** : `#@`  
+- **B** : `@###`  
+- **C** : `@#@#`  
+- **D** : `@##`  
+- **E** : `#`  
+- **F** : `##@#`  
+- **G** : `@@#`  
+- **H** : `####`  
+- **I** : `##`  
+- **J** : `#@@@`  
+- **K** : `@#@`  
+- **L** : `#@##`  
+- **M** : `@@`  
+- **N** : `@#`  
+- **O** : `@@@`  
+- **P** : `#@@#`  
+- **Q** : `@@#@`  
+- **R** : `#@#`  
+- **S** : `###`  
+- **T** : `@`  
+- **U** : `##@`  
+- **V** : `###@`  
+- **W** : `#@@`  
+- **X** : `@##@`  
+- **Y** : `@#@@`  
+- **Z** : `@@##`  
+- **0** : `@@@@@`  
+- **1** : `#@@@@`  
+- **2** : `##@@@`  
+- **3** : `###@@`  
+- **4** : `####@`  
+- **5** : `#####`  
+- **6** : `@####`  
+- **7** : `@@###`  
+- **8** : `@@@##`  
+- **9** : `@@@@#`  
 
-Move up one directory
-    cd ..
+### Usage
+Use this custom Morse code dictionary in your program to encode or decode messages in a unique way!
 
-////////////Compile Assembly Code//////////////
 
+### Find Key
+
+- Display the contents of a file
+```cat filename.txt```
+
+- Change to a specific directory
+    ```cd /path/to/directory```
+
+- Move up one directory
+    ```cd ..```
+
+### Compile Assembly Code
+```
 nasm -f elf64 -o asm_phase.o asm_phase.asm
 ld -o asm_phase asm_phase.o  # Link the object file
 chmod +x asm_phase            # Make it executable
@@ -96,31 +128,35 @@ gdb ./asm_phase
 (gdb) disassemble _start
 (gdb) info registers
 (gdb) stepi * 2
+```
 
 
 
-////////////Compile C Code//////////////
-Open a File
-   nano filename.c
-Common Commands:
+### Compile C Code
+- Open a File
+   ```nano filename.c```
+- Common Commands:
 
-   Save changes: Ctrl + O (then press Enter to confirm)
-   Exit nano: Ctrl + X
-   Cut text: Ctrl + K
-   Paste text: Ctrl + U
-   Search for text: Ctrl + W
+   - Save changes: Ctrl + O (then press Enter to confirm)
+   - Exit nano: Ctrl + X
+   - Cut text: Ctrl + K
+   - Paste text: Ctrl + U
+   - Search for text: Ctrl + W
 
+```
 gcc -o solution solution.c
 chmod +x solution  # Make it executable
+```
 
 
-///////////////Decode Image////////////
+### Decode Image
+```
 exiftool image.png
 
 nano encoded_message.txt
 //Write Hidden message in file
 base64 -d encoded_message.txt > hidden_message.txt
 cat hidden_message.txt
-
+```
 
 
