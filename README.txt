@@ -48,6 +48,7 @@ The objective is to solve all phases to defuse the bomb. Incorrect answers or in
 
 sudo apt update
 sudo apt upgrade
+sudo apt install git
 sudo apt install -y build-essential gdb manpages-dev
 sudo apt install python3 gcc nasm gdb
 sudo apt install figlet toilet
