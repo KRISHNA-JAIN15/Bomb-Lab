@@ -9,7 +9,6 @@
 int isEven(int x)
 {
     // Check the least significant bit; if it's 0, x is even
-    
 }
 
 int main()
