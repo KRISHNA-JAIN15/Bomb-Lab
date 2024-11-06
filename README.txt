@@ -48,7 +48,7 @@ sudo apt install figlet toilet
 sudo apt install ruby
 sudo gem install lolcat
 sudo apt install alsa-utils
-python3 -m pip install subprocess os random base64 math pillow
+python3 -m pip install pillow
 
 gcc --version
 gdb --version
