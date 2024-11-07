@@ -127,7 +127,7 @@ gdb ./asm_phase
 (gdb) run
 (gdb) disassemble _start
 (gdb) info registers
-(gdb) stepi * 2
+(gdb) stepi # use stepi 2 times
 ```
 
 
