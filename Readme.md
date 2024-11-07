@@ -1,6 +1,7 @@
 # Bomb Defusal Game
 
-Description
+### Description
+
 This is a Python-based Bomb Defusal Game that consists of multiple phases. 
 Each phase involves solving riddles, decoding Morse code, and performing programming challenges in C and Assembly. 
 The objective is to solve all phases to defuse the bomb. Incorrect answers or incomplete tasks will trigger a simulated explosion!
